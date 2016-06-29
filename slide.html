@@ -66,13 +66,13 @@
 		bot=['r1','r2','r3','r4','r5','r6','r7'];
 		var k=1;
 		
-		document.getElementById(bot[1]).style.background = 'black';
+		document.getElementById(bot[1]).style.background = 'red';
 
 		function dis(a,an) {
 			
 			for(i=0;i<arr.length;i++){
     			document.getElementById(arr[i]).style.display  = 'none';
-    			document.getElementById(bot[i]).style.background = 'white';
+    			document.getElementById(bot[i]).style.background = 'black';
     		}
     		
     		k=k+a;
@@ -81,7 +81,7 @@
     		if(k<0){k=arr.length-1;}
     		if(k>arr.length-1){k=0;}
     		document.getElementById(arr[k]).style.display  = 'block';
-    		document.getElementById(bot[k]).style.background = 'black';
+    		document.getElementById(bot[k]).style.background = 'red';
     		document.getElementById(arr[k]).style.animation = an;
     		
     	    		
